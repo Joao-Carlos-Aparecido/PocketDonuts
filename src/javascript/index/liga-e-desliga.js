@@ -6,11 +6,15 @@ const bl1 = document.getElementById("bloco1");
 const bl2 = document.getElementById("bloco2");
 const bl3 = document.getElementById("bloco3");
 const bl4 = document.getElementById("bloco4");
+const TelaDescarregou = document.getElementById("fim-de-carga");
+const apps = document.getElementById("apps")
 function alternar() {
   if (tela.style.backgroundImage) {
     tela.style.backgroundImage = ""; // Remove a imagem
     ic.style.display = "none";
     icr.style.display = "none";
+    apps.style.display = "none"
+
   } else {
     tela.style.backgroundImage =
       "url('../../../assents/img/wallpaper/wallpaper.png')"; // Define a imagem
@@ -20,7 +24,7 @@ function alternar() {
     bl2.style.display = "block";
     bl3.style.display = "block";
     bl4.style.display = "block";
-
+    apps.style.display = "flex"
   }
 }
 
@@ -29,13 +33,23 @@ function descarregou() {
     setTimeout(() => {
       tela.style.backgroundImage = "";
       ic.style.display = "none";
+      apps.style.display = "none"
+
       icr.style.display = "none";
     }, 12000);
   }
 }
 
-function bateria() {
+function TelaDescarregouF() {
+  setTimeout(() => {
+    TelaDescarregou.style.display = "flex";
+  }, 10000);
+  setTimeout(() => {
+    TelaDescarregou.style.display = "none";
+  }, 12000);
+}
 
+function bateria() {
   setTimeout(() => {
     bl4.style.display = "none";
   }, 3000);
@@ -53,5 +67,6 @@ function bateria() {
 btn.addEventListener("click", function () {
   alternar();
   descarregou();
-  bateria()
+  bateria();
+  TelaDescarregouF();
 });

@@ -1,0 +1,23 @@
+#fim-de-carga {
+    display: none;
+    width: 30vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(164, 52, 52);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#fim-de-carga > h1 {
+    color: white;
+    font-size: 5vw;
+    
+}
+
+#fim-de-carga > p {
+    color: white;
+    font-size: 2vw;
+}

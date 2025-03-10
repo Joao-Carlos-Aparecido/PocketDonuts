@@ -1,0 +1,81 @@
+#apps {
+    width: 30vw;
+    height: 13vh;
+    margin-top: 45vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#calculadora {
+    width: 8.5vw;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5E6C4;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 2vw;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    &:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}
+
+#calculadora > img {
+    width: 12vw;
+    height: 12vw;
+}
+
+#bloco-de-notas {
+    width: 8.5vw;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A0B1C5;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 2vw;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    &:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}
+
+#bloco-de-notas > img {
+    width: 12vw;
+    height: 12vw;
+}
+
+#jogo {
+    width: 8.5vw;
+    height: 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3E1E1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 2vw;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    &:active {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}
+
+#jogo > img {
+    width: 12vw;
+    height: 12vw;
+}
