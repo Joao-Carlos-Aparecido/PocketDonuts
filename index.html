@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/css-index/css-main.css">
     <link rel="stylesheet" href="src/css/css-index/fim-carga.css">
     <link rel="stylesheet" href="src/css/css-index/apps.css">
+    <link rel="stylesheet" href="src/css/css-index/calculadora-fun.css">
     <link rel="stylesheet" href="src/css/css-otherpage/padrao.css">
 </head>
 <body>
@@ -20,10 +21,6 @@
                 <article id="cam2"></article>
             </article>
             <article id="tela">
-                <section id="fim-de-carga">
-                    <h1>:[</h1>
-                    <p>FIM DE CARGA</p>
-                </section>
                 <section id="icones">
                     <article id="bateria">
                         <article id="bloco1"></article>
@@ -37,10 +34,54 @@
                         <img src="assents/img/tela/icones/wifi.png" alt="">
                     </article>
                 </section>
-                <section id="apps">
-                    <article id="calculadora">
-                        <img src="assents/img/apps/calculadora/calculadora-app.png" alt="">
+                <section id="aplic-funci">
+                    
+                    <article id="calculadora-funci">
+                        <article id="article-voltar-cal">
+                            <button id="voltar-cal">
+                                <img src="assents/img/apps/seta/seta.png" alt="">
+                            </button>
+                        </article>
+                        <section>
+                            <article id="article-button-reset">
+                                <button>reset</button>
+                            </article>
+                            <article>
+                                <input type="text"  id="calculadora-funci-tela" readonly>
+                            </article>
+                            <article id="calculadora-funci-botoes">
+                               <article id="calculadora-funci-botoes-num">
+                               <input type="button" name="number1" id="number7" value="7" readonly>
+                               <input type="button" name="number1" id="number8" value="8" readonly>
+                               <input type="button" name="number1" id="number9" value="9" readonly>
+                               <input type="button" name="number1" id="number4" value="4" readonly>
+                               <input type="button" name="number1" id="number5" value="5" readonly>
+                               <input type="button" name="number1" id="number6" value="6" readonly>
+                               <input type="button" name="number1" id="number1" value="1" readonly>
+                               <input type="button" name="number1" id="number2" value="2" readonly>
+                               <input type="button" name="number1" id="number3" value="3" readonly>
+                                
+                               </article>
+                               <article id="calculadora-funci-botoes-sel">
+                                <input class="sel" type="button" name="" id="selMais" value="+" readonly>
+                                <input class="sel" type="button" name="" id="selMenos" value="-" readonly>
+                                <input class="sel" type="button" name="" id="selVezes" value="x" readonly>
+                                <input class="sel" type="button" name="" id="selDiv" value="/" readonly>
+                                <input class="sel" type="button" name="" id="selIgual" value="=" readonly>
+                               </article>
+                            </article>
+                        </section>
                     </article>
+                </section>
+                <section id="fim-de-carga">
+                    <h1>:[</h1>
+                    <p>FIM DE CARGA</p>
+                </section>
+                
+                <section id="apps">
+                    <button id="calculadora">
+                        <img src="assents/img/apps/calculadora/calculadora-app.png" alt="">
+                    </button>
                     <article id="bloco-de-notas">
                         <img src="assents/img/apps/bloco-de-notas/bloco-de-notas.png" alt="">
                     </article>
@@ -58,5 +99,6 @@
         </section>
     </main>
     <script src="src/javascript/index/liga-e-desliga.js"></script>
+    <script src="src/javascript/index/calculadora.js"></script>
 </body>
 </html>

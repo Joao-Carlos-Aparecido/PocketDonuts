@@ -1,12 +1,50 @@
 #apps {
     width: 30vw;
-    height: 13vh;
+    height: 24vh;
     margin-top: 45vh;
     display: none;
     align-items: center;
     justify-content: center;
     gap: 1vw;
 }
+
+@media (max-width: 1500px) {
+    #apps {
+        width: 40vw;
+        height: 24vh;
+        margin-top: 45vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #apps {
+        width: 58vw;
+        height: 24vh;
+        margin-top: 45vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #apps {
+        width: 67vw;
+        height: 24vh;
+        margin-top: 40vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+}
+
+/*-----------------------------------------------*/
 
 #calculadora {
     width: 8.5vw;
@@ -32,6 +70,86 @@
     height: 12vw;
 }
 
+@media (max-width: 1500px) {
+    #calculadora {
+        width: 11vw;
+        height: 11vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5E6C4;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #calculadora > img {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #calculadora {
+        width: 16vw;
+        height: 16vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5E6C4;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #calculadora > img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #calculadora {
+        width: 19vw;
+        height: 19vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5E6C4;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #calculadora > img {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+/*************************************************************************/
+
 #bloco-de-notas {
     width: 8.5vw;
     height: 8.5vw;
@@ -56,6 +174,85 @@
     height: 12vw;
 }
 
+@media (max-width: 1500px) {
+    #bloco-de-notas {
+        width: 11vw;
+        height: 11vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #A0B1C5;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #bloco-de-notas > img {
+        width: 14vw;
+        height: 14vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #bloco-de-notas {
+        width: 16vw;
+        height: 16vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #A0B1C5;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #bloco-de-notas > img {
+        width: 19vw;
+        height: 19vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #bloco-de-notas {
+        width: 19vw;
+        height: 19vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #A0B1C5;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #bloco-de-notas > img {
+        width: 22vw;
+        height: 22vw;
+    }
+}
+
+/********************************************************************/
 #jogo {
     width: 8.5vw;
     height: 8.5vw;
@@ -78,4 +275,82 @@
 #jogo > img {
     width: 12vw;
     height: 12vw;
+}
+
+@media (max-width: 1500px) {
+    #jogo {
+        width: 11vw;
+        height: 11vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D3E1E1;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #jogo > img {
+        width: 16vw;
+        height: 16vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #jogo {
+        width: 16vw;
+        height: 16vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D3E1E1;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #jogo > img {
+        width: 22vw;
+        height: 22vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #jogo {
+        width: 19vw;
+        height: 19vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D3E1E1;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 2vw;
+    
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    
+        &:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+    
+    #jogo > img {
+        width: 27vw;
+        height: 27vw;
+    }
 }
