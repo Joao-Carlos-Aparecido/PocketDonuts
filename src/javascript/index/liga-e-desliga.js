@@ -40,23 +40,23 @@ function descarregou() {
       calFunc.style.display = "none"
 
       icr.style.display = "none";
-    }, 12000000);
+    }, 1200000000);
   }
 }
 
 function TelaDescarregouF() {
   setTimeout(() => {
     TelaDescarregou.style.display = "flex";
-  }, 12000000);
+  }, 1200000000);
   setTimeout(() => {
     TelaDescarregou.style.display = "none";
-  }, 12500000);
+  }, 1250000000);
 }
 
 function bateria() {
   setTimeout(() => {
     bl4.style.display = "none";
-  }, 30000);
+  }, 3000000);
   setTimeout(() => {
     bl3.style.display = "none";
   }, 60000);

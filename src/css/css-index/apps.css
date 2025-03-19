@@ -8,9 +8,33 @@
     gap: 1vw;
 }
 
+@media (max-width: 1790px) {
+    #apps {
+        width: 32vw;
+        height: 24vh;
+        margin-top: 45vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 1600px) {
+    #apps {
+        width: 31.5vw;
+        height: 24vh;
+        margin-top: 45vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+}
+
 @media (max-width: 1500px) {
     #apps {
-        width: 40vw;
+        width: 42vw;
         height: 24vh;
         margin-top: 45vh;
         display: none;
