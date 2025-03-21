@@ -1,5 +1,191 @@
+#section-bloco-de-notas-func {
+  display: none;
+  
+}
+
 #bloco-de-notas-func {
-    width: 32vw;
-    height: 40vw;
-    background-color: #A0B1C5;
+  width: 30vw;
+  height: 44.5vw;
+  background-image: url("../../../assents/img/fundo/fundo-azul.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ver-nota {
+  width: 29.9vw;
+  height: 12vw;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 1.5vw;
+  padding-top: 2vw;
+  box-sizing: border-box;
+}
+
+#ver-nota > figure {
+    width: 14.6vw;
+    height: 5.6vw;
+    display: flex;
+    align-items: center;
+}
+
+#ver-nota > figure > img {
+    width: 3vw;
+    transform: rotate(180deg);
+}
+
+#article-ver-nota {
+  width: 5.6vw;
+  height: 5.6vw;
+  border-radius: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  &:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+#article-ver-nota > img {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 4vw;
+}
+
+#article-ver-nota-p {
+  width: 7vw;
+  height: 4.9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#article-ver-nota-p > p {
+  color: white;
+  font-size: 1.2vw;
+}
+
+#digitar-nota {
+  width: 29.9vw;
+  height: 16vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#id-digitar-nota {
+  width: 26vw;
+  height: 4vw;
+  border-radius: 2vw;
+  font-size: 2vw;
+}
+
+#salvar-nota {
+  width: 29.9vw;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+#input-salvar-nota {
+  width: 12vw;
+  height: 4vw;
+  font-size: 2vw;
+  border-radius: 2vw;
+  background-color: #5183b5;
+  color: #d1dae4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  &:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+#input-limpar-nota {
+  width: 12vw;
+  height: 4vw;
+  font-size: 2vw;
+  border-radius: 2vw;
+  background-color: #b55e51;
+  color: #d1dae4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  &:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+#area-das-notas {
+  width: 30vw;
+  height: 44.5vw;
+
+  display: none;
+  flex-direction: column;
+  gap: 3vw;
+  background-image: url("../../../assents/img/fundo/fundo-azul-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+#area-das-notas::-webkit-scrollbar {
+    width: 0.1vw;
+    background-color: transparent; 
+  }
+
+#area-das-notas > article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #5183b5;
+  border-radius: 5px;
+  max-width: 100%;
+  word-wrap: break-word;
+   
+}
+
+#area-das-notas > article > p {
+  color: white;
+  display: inline;
+  word-break: break-word;
+  font-size: 1.5vw;
+}
+
+#area-das-notas > article > button {
+  width: 4vw;
+  height: 3vw;
+  background-color: #b55e51;
+  color: #d1dae4;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  &:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+#area-das-notas-seta {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+#area-das-notas-seta > img {
+    transform: rotate(180deg);
+    width: 2.5vw;
+    height: 2.5vw;
 }

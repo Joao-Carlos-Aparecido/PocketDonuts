@@ -103,3 +103,5 @@ btnIgual.addEventListener("click", function () {
     telaCal.value = "Erro";
   }
 });
+
+export {calFunc}

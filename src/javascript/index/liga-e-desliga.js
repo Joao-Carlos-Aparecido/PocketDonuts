@@ -1,3 +1,6 @@
+import { secaoBloco } from "./bloco-de-notas.js";
+import { calFunc } from "./calculadora.js";
+
 const btn = document.getElementById("btn-digt");
 let tela = document.getElementById("tela");
 const ic = document.getElementById("icones");
@@ -9,6 +12,8 @@ const bl3 = document.getElementById("bloco3");
 const bl4 = document.getElementById("bloco4");
 const TelaDescarregou = document.getElementById("fim-de-carga");
 const apps = document.getElementById("apps")
+
+
 function alternar() {
   if (tela.style.backgroundImage) {
     tela.style.backgroundImage = ""; 
@@ -16,6 +21,8 @@ function alternar() {
     icr.style.display = "none";
     apps.style.display = "none"
     calFunc.style.display = "none"
+    secaoBloco.style.display = "none";
+    
 
   } else {
     tela.style.backgroundImage =
@@ -38,7 +45,7 @@ function descarregou() {
       ic.style.display = "none";
       apps.style.display = "none"
       calFunc.style.display = "none"
-
+      secaoBloco.style.display = "none";
       icr.style.display = "none";
     }, 1200000000);
   }
