@@ -1,136 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pocket Donuts</title>
-    <link rel="shortcut icon" href="assents/img/mascote/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/css/css-index/css-main.css">
-    <link rel="stylesheet" href="src/css/css-index/fim-carga.css">
-    <link rel="stylesheet" href="src/css/css-index/apps.css">
-    <link rel="stylesheet" href="src/css/css-index/calculadora-fun.css">
-    <link rel="stylesheet" href="src/css/css-otherpage/padrao.css">
-    <link rel="stylesheet" href="src/css/css-index/bloco-de-notas.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="assents/img/mascote/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/css/css-index/css-main.css" />
+    <link rel="stylesheet" href="src/css/css-index/fim-carga.css" />
+    <link rel="stylesheet" href="src/css/css-index/apps.css" />
+    <link rel="stylesheet" href="src/css/css-index/calculadora-fun.css" />
+    <link rel="stylesheet" href="src/css/css-otherpage/padrao.css" />
+    <link rel="stylesheet" href="src/css/css-index/bloco-de-notas.css" />
+    <link rel="stylesheet" href="src/css/css-index/game.css" />
+  </head>
+  <body>
     <main id="main">
-        <section id="carcaca">
-            <article id="parte-superior">
-                <article id="cam1">
-                    <article></article>
-                </article>
-                <article id="cam2"></article>
+      <section id="carcaca">
+        <article id="parte-superior">
+          <article id="cam1">
+            <article></article>
+          </article>
+          <article id="cam2"></article>
+        </article>
+        <article id="tela">
+          <section id="icones">
+            <article id="bateria">
+              <article id="bloco1"></article>
+              <article id="bloco2"></article>
+              <article id="bloco3"></article>
+              <article id="bloco4"></article>
             </article>
-            <article id="tela">
-                <section id="icones">
-                    <article id="bateria">
-                        <article id="bloco1"></article>
-                        <article id="bloco2"></article>
-                        <article id="bloco3"></article>
-                        <article id="bloco4"></article>
-                    </article>
-                    <article id="icones-right">
-                        <img src="assents/img/tela/icones/celular.png" alt="">
-                        <img src="assents/img/tela/icones/noti.png" alt="">
-                        <img src="assents/img/tela/icones/wifi.png" alt="">
-                    </article>
-                </section>
-                <section id="aplic-funci">
-                    
-                    <article id="calculadora-funci">
-                        <article id="article-voltar-cal">
-                            <button id="voltar-cal">
-                                <img src="assents/img/apps/seta/seta.png" alt="">
-                            </button>
-                        </article>
-                        <section>
-                            <article id="article-button-reset">
-                                <button id="button-reset">reset</button>
-                            </article>
-                            <article>
-                                <input type="text"  id="calculadora-funci-tela" readonly>
-                            </article>
-                            <article id="calculadora-funci-botoes">
-                               <article id="calculadora-funci-botoes-num">
-                               <input type="button" name="number1" id="number7" value="7" readonly>
-                               <input type="button" name="number1" id="number8" value="8" readonly>
-                               <input type="button" name="number1" id="number9" value="9" readonly>
-                               <input type="button" name="number1" id="number4" value="4" readonly>
-                               <input type="button" name="number1" id="number5" value="5" readonly>
-                               <input type="button" name="number1" id="number6" value="6" readonly>
-                               <input type="button" name="number1" id="number1" value="1" readonly>
-                               <input type="button" name="number1" id="number2" value="2" readonly>
-                               <input type="button" name="number1" id="number3" value="3" readonly>
-                                
-                               </article>
-                               <article id="calculadora-funci-botoes-sel">
-                                <input class="sel" type="button" name="" id="selMais" value="+" readonly>
-                                <input class="sel" type="button" name="" id="selMenos" value="-" readonly>
-                                <input class="sel" type="button" name="" id="selVezes" value="x" readonly>
-                                <input class="sel" type="button" name="" id="selDiv" value="/" readonly>
-                                <input class="sel" type="button" name="" id="selIgual" value="=" readonly>
-                               </article>
-                            </article>
-                        </section>
-                    </article>
-
-                    <section id="section-bloco-de-notas-func">
-                        <article id="bloco-de-notas-func">
-                            <section id="ver-nota">
-                                
-                                <article id="article-ver-nota">
-                                    <img src="assents/img/apps/bloco-de-notas/icone.png" alt="">
-                                </article>
-                                <article id="article-ver-nota-p">
-                                    <p>VER NOTAS</p>
-                                </article>
-                                <figure id="ver-nota-seta">
-                                    <img id="seta-primera-block" src="assents/img/apps/seta/seta-branca.png" alt="">
-                                </figure>
-                            </section>
-                            <article id="digitar-nota">
-                                <input type="text" placeholder="  Digite sua nota" name="digitar-nota" id="id-digitar-nota">
-                            </article>
-                            <article id="salvar-nota">
-                                <input type="submit" id="input-salvar-nota" value="Salvar">
-                                <input type="submit" id="input-limpar-nota" value="Limpar">
-                            </article>
-                        </article>
-                        
-                        <article id="area-das-notas">
-                            <figure id="area-das-notas-seta">
-                                <img id="seta-ver-notas" src="assents/img/apps/seta/seta-branca.png" alt="">
-                            </figure>
-                        </article>
-                    </section>
-                </section>
-                <section id="fim-de-carga">
-                    <h1>:[</h1>
-                    <p>FIM DE CARGA</p>
-                </section>
-                
-                <section id="apps">
-                    <button id="calculadora">
-                        <img src="assents/img/apps/calculadora/calculadora-app.png" alt="">
-                    </button>
-                    <article id="bloco-de-notas">
-                        <img src="assents/img/apps/bloco-de-notas/bloco-de-notas.png" alt="">
-                    </article>
-                    <article id="jogo">
-                        <img src="assents/img/apps/jogo/jogo.png" alt="">
-                    </article>
-                </section>
-                
+            <article id="icones-right">
+              <img src="assents/img/tela/icones/celular.png" alt="" />
+              <img src="assents/img/tela/icones/noti.png" alt="" />
+              <img src="assents/img/tela/icones/wifi.png" alt="" />
             </article>
-            <article id="parte-inferior">
-                <button id="btn-digt">
-
+          </section>
+          <section id="aplic-funci">
+            <article id="calculadora-funci">
+              <article id="article-voltar-cal">
+                <button id="voltar-cal">
+                  <img src="assents/img/apps/seta/seta.png" alt="" />
                 </button>
+              </article>
+              <section>
+                <article id="article-button-reset">
+                  <button id="button-reset">reset</button>
+                </article>
+                <article>
+                  <input type="text" id="calculadora-funci-tela" readonly />
+                </article>
+                <article id="calculadora-funci-botoes">
+                  <article id="calculadora-funci-botoes-num">
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number7"
+                      value="7"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number8"
+                      value="8"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number9"
+                      value="9"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number4"
+                      value="4"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number5"
+                      value="5"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number6"
+                      value="6"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number1"
+                      value="1"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number2"
+                      value="2"
+                      readonly
+                    />
+                    <input
+                      type="button"
+                      name="number1"
+                      id="number3"
+                      value="3"
+                      readonly
+                    />
+                  </article>
+                  <article id="calculadora-funci-botoes-sel">
+                    <input
+                      class="sel"
+                      type="button"
+                      name=""
+                      id="selMais"
+                      value="+"
+                      readonly
+                    />
+                    <input
+                      class="sel"
+                      type="button"
+                      name=""
+                      id="selMenos"
+                      value="-"
+                      readonly
+                    />
+                    <input
+                      class="sel"
+                      type="button"
+                      name=""
+                      id="selVezes"
+                      value="x"
+                      readonly
+                    />
+                    <input
+                      class="sel"
+                      type="button"
+                      name=""
+                      id="selDiv"
+                      value="/"
+                      readonly
+                    />
+                    <input
+                      class="sel"
+                      type="button"
+                      name=""
+                      id="selIgual"
+                      value="="
+                      readonly
+                    />
+                  </article>
+                </article>
+              </section>
             </article>
-        </section>
+
+            <section id="section-bloco-de-notas-func">
+              <article id="bloco-de-notas-func">
+                <section id="ver-nota">
+                  <article id="article-ver-nota">
+                    <img
+                      src="assents/img/apps/bloco-de-notas/icone.png"
+                      alt=""
+                    />
+                  </article>
+                  <article id="article-ver-nota-p">
+                    <p>VER NOTAS</p>
+                  </article>
+                  <figure id="ver-nota-seta">
+                    <img
+                      id="seta-primera-block"
+                      src="assents/img/apps/seta/seta-branca.png"
+                      alt=""
+                    />
+                  </figure>
+                </section>
+                <article id="digitar-nota">
+                  <input
+                    type="text"
+                    placeholder="  Digite sua nota"
+                    name="digitar-nota"
+                    id="id-digitar-nota"
+                  />
+                </article>
+                <article id="salvar-nota">
+                  <input type="submit" id="input-salvar-nota" value="Salvar" />
+                  <input type="submit" id="input-limpar-nota" value="Limpar" />
+                </article>
+              </article>
+
+              <article id="area-das-notas">
+                <figure id="area-das-notas-seta">
+                  <img
+                    id="seta-ver-notas"
+                    src="assents/img/apps/seta/seta-branca.png"
+                    alt=""
+                  />
+                </figure>
+              </article>
+            </section>
+
+            <section id="game-func">
+              <section id="play">
+                <figure>
+                  <p>
+                    🌵 A Proposta 🌵<br />
+                    “Explorador… Você tem coragem de enfrentar o deserto? O ouro
+                    está espalhado pelas dunas, mas múmias perigosas te cercam.
+                    Aceite o desafio: pegue o máximo de ouro, desvie dos
+                    inimigos e mostre que consegue sair vivo desse lugar.”
+                  </p>
+                </figure>
+                <button id="play-button">
+                  <p>ACEITAR</p>
+                </button>
+              </section>
+
+              <section id="game-over">
+                <button id="button-reinicia">REINICIAR</button>
+              </section>
+              <canvas id="gameCanvas"></canvas>
+
+              <figure id="game-seta">
+                <img
+                  id="seta-game"
+                  src="assents/img/apps/seta/seta.png"
+                  alt=""
+                />
+              </figure>
+              <div class="controls">
+                <button class="btn" id="up">↑</button>
+                <div class="horizontal">
+                  <button class="btn" id="left">←</button>
+                  <button class="btn" id="right">→</button>
+                </div>
+                <button class="btn" id="down">↓</button>
+              </div>
+            </section>
+          </section>
+          <section id="fim-de-carga">
+            <h1>:[</h1>
+            <p>FIM DE CARGA</p>
+          </section>
+
+          <section id="apps">
+            <button id="calculadora">
+              <img
+                src="assents/img/apps/calculadora/calculadora-app.png"
+                alt=""
+              />
+            </button>
+            <article id="bloco-de-notas">
+              <img
+                src="assents/img/apps/bloco-de-notas/bloco-de-notas.png"
+                alt=""
+              />
+            </article>
+            <article id="jogo">
+              <img src="assents/img/apps/jogo/jogo.png" alt="" />
+            </article>
+          </section>
+        </article>
+        <article id="parte-inferior">
+          <button id="btn-digt"></button>
+        </article>
+      </section>
     </main>
     <script type="module" src="src/javascript/index/liga-e-desliga.js"></script>
     <script type="module" src="src/javascript/index/calculadora.js"></script>
     <script type="module" src="src/javascript/index/bloco-de-notas.js"></script>
-</body>
+    <script
+      type="module"
+      src="src/javascript/index/caçador-de-tesouros.js"
+    ></script>
+  </body>
 </html>

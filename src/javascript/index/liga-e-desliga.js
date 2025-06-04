@@ -1,5 +1,6 @@
 import { secaoBloco } from "./bloco-de-notas.js";
 import { calFunc } from "./calculadora.js";
+import { game } from "./caçador-de-tesouros.js";
 
 const btn = document.getElementById("btn-digt");
 let tela = document.getElementById("tela");
@@ -22,6 +23,7 @@ function alternar() {
     apps.style.display = "none"
     calFunc.style.display = "none"
     secaoBloco.style.display = "none";
+    game.style.display = "none"
     
 
   } else {
@@ -47,6 +49,7 @@ function descarregou() {
       calFunc.style.display = "none"
       secaoBloco.style.display = "none";
       icr.style.display = "none";
+      game.style.display = "none"
     }, 1200000000);
   }
 }
