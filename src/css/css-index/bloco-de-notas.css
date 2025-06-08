@@ -5,7 +5,7 @@
 
 #bloco-de-notas-func {
   width: 30vw;
-  height: 44.5vw;
+  height: 65vh;
   background-image: url("../../../assents/img/fundo/fundo-azul.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,7 +334,7 @@
 
 #digitar-nota {
   width: 29.9vw;
-  height: 16vw;
+  height: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -625,7 +625,7 @@
 
 #area-das-notas {
   width: 30vw;
-  height: 44.5vw;
+  height: 67vh;
 
   display: none;
   flex-direction: column;

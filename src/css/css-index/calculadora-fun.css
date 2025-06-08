@@ -581,7 +581,7 @@
 #article-voltar-cal {
     width: 0vw;
     height: 3vw;
-    margin-top: -39vw;
+    margin-top: -29vw;
     
 }
 
@@ -599,4 +599,88 @@
 #voltar-cal >img:active {
     width: 3.5vw;
     height: 3.5vw;
+}
+
+
+@media (max-width: 1800px) {
+    #article-voltar-cal {
+    width: 0vw;
+    height: 3vw;
+    margin-top: -29vw;
+    
+}
+
+#voltar-cal {
+    all: unset;
+    rotate: 180deg;
+
+}
+
+#voltar-cal >img {
+    width: 3vw;
+    height: 3vw;
+}
+
+#voltar-cal >img:active {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+}
+
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1024px) {
+    #article-voltar-cal {
+    width: 0vw;
+    height: 3vw;
+    margin-top: -59vw;
+    
+}
+
+#voltar-cal {
+    all: unset;
+    rotate: 180deg;
+
+}
+
+#voltar-cal >img {
+    width: 6vw;
+    height: 6vw;
+}
+
+#voltar-cal >img:active {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+}
+
+@media (max-width: 600px) {
+    #article-voltar-cal {
+    width: 0vw;
+    height: 3vw;
+    margin-top: -89vw;
+    
+}
+
+#voltar-cal {
+    all: unset;
+    rotate: 180deg;
+
+}
+
+#voltar-cal >img {
+    width: 6vw;
+    height: 6vw;
+}
+
+#voltar-cal >img:active {
+    width: 3.5vw;
+    height: 3.5vw;
+}
 }

@@ -43,7 +43,7 @@ function resizeCanvas() {
 
     ouroDrawSize.width = 50;
     ouroDrawSize.height = 50;
-  } else if (window.innerWidth >= 600) {
+  } else if (window.innerWidth <= 600) {
     personagemDrawSize.width = 30;
     personagemDrawSize.height = 30;
 
