@@ -6,20 +6,12 @@ const gameover = document.getElementById("game-over");
 const reinicia = document.getElementById("button-reinicia");
 const play = document.getElementById("play");
 const aceitar = document.getElementById("play-button");
-const gameSeta = document.getElementById("game-seta")
+const gameSeta = document.getElementById("game-seta");
 
-function resizeCanvas() {
-  canvas.width = window.innerWidth * 0.4;
-  canvas.height = window.innerHeight * 0.4;
-}
-window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
-
-// Imagens e seus tamanhos (só a imagem, a colisão tem tamanho fixo menor)
 const personagemImg = new Image();
 personagemImg.src = "../../assents/img/apps/jogo/personagem.png";
-const personagemDrawSize = { width: 186, height: 186 }; // tamanho da imagem para desenhar
-const personagemColSize = { width: 60, height: 60 }; // área de colisão
+const personagemDrawSize = { width: 186, height: 186 };
+const personagemColSize = { width: 60, height: 60 };
 
 const mumiaImg = new Image();
 mumiaImg.src = "../../assents/img/apps/jogo/mumia.png";
@@ -37,20 +29,51 @@ let level = 1;
 let balls = [];
 let stars = [];
 
+function resizeCanvas() {
+  canvas.width = window.innerWidth * 0.4;
+  canvas.height = window.innerHeight * 0.4;
+
+
+  if (window.innerWidth <= 1024) {
+    personagemDrawSize.width = 100;
+    personagemDrawSize.height = 100;
+
+    mumiaDrawSize.width = 60;
+    mumiaDrawSize.height = 60;
+
+    ouroDrawSize.width = 50;
+    ouroDrawSize.height = 50;
+  } else if (window.innerWidth >= 600) {
+    personagemDrawSize.width = 30;
+    personagemDrawSize.height = 30;
+
+    mumiaDrawSize.width = 50;
+    mumiaDrawSize.height = 50;
+
+    ouroDrawSize.width = 40;
+    ouroDrawSize.height = 40;
+  } else  {
+    personagemDrawSize.width = 186;
+    personagemDrawSize.height = 186;
+
+    mumiaDrawSize.width = 96;
+    mumiaDrawSize.height = 96;
+
+    ouroDrawSize.width = 84;
+    ouroDrawSize.height = 84;
+  }
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
 function update() {
   if (keys["ArrowUp"]) square.y -= square.speed;
   if (keys["ArrowDown"]) square.y += square.speed;
   if (keys["ArrowLeft"]) square.x -= square.speed;
   if (keys["ArrowRight"]) square.x += square.speed;
 
-  square.x = Math.max(
-    0,
-    Math.min(canvas.width - personagemColSize.width, square.x)
-  );
-  square.y = Math.max(
-    0,
-    Math.min(canvas.height - personagemColSize.height, square.y)
-  );
+  square.x = Math.max(0, Math.min(canvas.width - personagemColSize.width, square.x));
+  square.y = Math.max(0, Math.min(canvas.height - personagemColSize.height, square.y));
 
   for (let ball of balls) {
     if (!ball.collected) {
@@ -105,7 +128,6 @@ function update() {
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Desenha personagem
   ctx.drawImage(
     personagemImg,
     square.x,
@@ -114,7 +136,6 @@ function draw() {
     personagemDrawSize.height
   );
 
-  // Desenha bolas (ouro)
   for (let ball of balls) {
     if (!ball.collected) {
       ctx.drawImage(
@@ -127,7 +148,6 @@ function draw() {
     }
   }
 
-  // Desenha mumias
   for (let star of stars) {
     ctx.drawImage(
       mumiaImg,
@@ -137,11 +157,6 @@ function draw() {
       mumiaDrawSize.height
     );
   }
-
-  // Removido texto do nível:
-  // ctx.fillStyle = "black";
-  // ctx.font = "20px Arial";
-  // ctx.fillText("Nível: " + level, 10, 20);
 }
 
 function gameLoop() {
@@ -206,7 +221,7 @@ gameSeta.addEventListener("click", function () {
 appGame.addEventListener("click", function () {
   game.style.display = "block";
   document.getElementById("apps").style.display = "none";
-  play.style.display = "flex"
+  play.style.display = "flex";
 });
 
 aceitar.addEventListener("click", function () {
@@ -221,64 +236,17 @@ gameover.addEventListener("click", function () {
 window.addEventListener("keydown", (e) => (keys[e.key] = true));
 window.addEventListener("keyup", (e) => (keys[e.key] = false));
 
-document
-  .getElementById("up")
-  .addEventListener("mousedown", () => (keys["ArrowUp"] = true));
-document
-  .getElementById("down")
-  .addEventListener("mousedown", () => (keys["ArrowDown"] = true));
-document
-  .getElementById("left")
-  .addEventListener("mousedown", () => (keys["ArrowLeft"] = true));
-document
-  .getElementById("right")
-  .addEventListener("mousedown", () => (keys["ArrowRight"] = true));
-
-document
-  .getElementById("up")
-  .addEventListener("mouseup", () => (keys["ArrowUp"] = false));
-document
-  .getElementById("down")
-  .addEventListener("mouseup", () => (keys["ArrowDown"] = false));
-document
-  .getElementById("left")
-  .addEventListener("mouseup", () => (keys["ArrowLeft"] = false));
-document
-  .getElementById("right")
-  .addEventListener("mouseup", () => (keys["ArrowRight"] = false));
-
-document.getElementById("up").addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  keys["ArrowUp"] = true;
-});
-document.getElementById("down").addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  keys["ArrowDown"] = true;
-});
-document.getElementById("left").addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  keys["ArrowLeft"] = true;
-});
-document.getElementById("right").addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  keys["ArrowRight"] = true;
-});
-
-document.getElementById("up").addEventListener("touchend", (e) => {
-  e.preventDefault();
-  keys["ArrowUp"] = false;
-});
-document.getElementById("down").addEventListener("touchend", (e) => {
-  e.preventDefault();
-  keys["ArrowDown"] = false;
-});
-document.getElementById("left").addEventListener("touchend", (e) => {
-  e.preventDefault();
-  keys["ArrowLeft"] = false;
-});
-document.getElementById("right").addEventListener("touchend", (e) => {
-  e.preventDefault();
-  keys["ArrowRight"] = false;
+["up", "down", "left", "right"].forEach((dir) => {
+  document.getElementById(dir).addEventListener("mousedown", () => (keys[`Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}`] = true));
+  document.getElementById(dir).addEventListener("mouseup", () => (keys[`Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}`] = false));
+  document.getElementById(dir).addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    keys[`Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}`] = true;
+  });
+  document.getElementById(dir).addEventListener("touchend", (e) => {
+    e.preventDefault();
+    keys[`Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}`] = false;
+  });
 });
 
 resetLevel();

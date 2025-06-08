@@ -84,3 +84,5 @@ btn.addEventListener("click", function () {
   bateria();
   TelaDescarregouF();
 });
+
+export {bt}

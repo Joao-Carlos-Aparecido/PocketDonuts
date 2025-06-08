@@ -135,3 +135,700 @@
 .controls button:hover {
   background: #cccccc6d;
 }
+
+
+
+
+
+@media (max-width: 1790px) {
+    
+#game-func {
+  display: none;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#play > figure {
+  width: 31vw;
+  height: 60vh;
+  position: absolute;
+  background-image: url("../../../assents/img/apps/jogo/papiro.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play > figure > p {
+  width: 15vw;
+  height: 30vh;
+  font-size: 1.2vw;
+  color: rgb(148, 12, 12);
+  position: relative;
+  top: -1vw;
+  font-weight: 900;
+}
+
+#play > button {
+  position: absolute;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 2vw;
+  background-color: rgb(83, 2, 2);
+  top: 30vw;
+  font-size: 1.5vw;
+  color: white;
+}
+
+#play > button:active {
+  width: 17vw;
+  height: 5vw;
+  background-color: rgb(83, 2, 2);
+}
+
+#game-over {
+    z-index: 2;
+  width: 32vw;
+  height: 30vh;
+  background-image: url("../../../assents/img/apps/jogo/game-over.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  justify-content: center;
+}
+
+#game-seta {
+  position: absolute;
+  transform: rotate(180deg);
+  top: 10vw;
+}
+
+#seta-game {
+  width: 5vw;
+  height: 5vw;
+}
+
+#button-reinicia {
+  font-size: 1.5vw;
+  color: bisque;
+  font-weight: 800;
+  font-family: "Oldenburg", serif;
+  background-color: rgb(117, 15, 15);
+  width: 13vw;
+  height: 5vw;
+  border-radius: 3vw;
+  position: relative;
+  top: 10vw;
+}
+
+#button-reinicia:active {
+  background-color: rgb(122, 61, 61);
+  width: 15vw;
+  height: 6vw;
+}
+
+#gameCanvas {
+  border: 2px solid black;
+  background-image: url("../../../assents/img/apps/jogo/cenario-desert.jpg");
+  background-size: contain;
+  display: block;
+  margin-bottom: 20px;
+  width: 32vw;
+  height: 66.7vh;
+}
+.controls {
+    position: absolute;
+    top: 30vw;
+  display: none;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.controls .horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.controls button {
+  width: 5vw;
+  height: 4vw;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  background: #cccccc6d;
+  border: 1px solid #999;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #cccccc6d;
+}
+}
+
+@media (max-width: 1600px) {
+   #game-func {
+  display: none;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#play > figure {
+  width: 31vw;
+  height: 60vh;
+  position: absolute;
+  background-image: url("../../../assents/img/apps/jogo/papiro.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play > figure > p {
+  width: 15vw;
+  height: 30vh;
+  font-size: 1.2vw;
+  color: rgb(148, 12, 12);
+  position: relative;
+  top: -1vw;
+  font-weight: 900;
+}
+
+#play > button {
+  position: absolute;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 2vw;
+  background-color: rgb(83, 2, 2);
+  top: 30vw;
+  font-size: 1.5vw;
+  color: white;
+}
+
+#play > button:active {
+  width: 17vw;
+  height: 5vw;
+  background-color: rgb(83, 2, 2);
+}
+
+#game-over {
+    z-index: 2;
+  width: 32vw;
+  height: 30vh;
+  background-image: url("../../../assents/img/apps/jogo/game-over.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  justify-content: center;
+}
+
+#game-seta {
+  position: absolute;
+  transform: rotate(180deg);
+  top: 10vw;
+}
+
+#seta-game {
+  width: 5vw;
+  height: 5vw;
+}
+
+#button-reinicia {
+  font-size: 1.5vw;
+  color: bisque;
+  font-weight: 800;
+  font-family: "Oldenburg", serif;
+  background-color: rgb(117, 15, 15);
+  width: 13vw;
+  height: 5vw;
+  border-radius: 3vw;
+  position: relative;
+  top: 10vw;
+}
+
+#button-reinicia:active {
+  background-color: rgb(122, 61, 61);
+  width: 15vw;
+  height: 6vw;
+}
+
+#gameCanvas {
+  border: 2px solid black;
+  background-image: url("../../../assents/img/apps/jogo/cenario-desert.jpg");
+  background-size: contain;
+  display: block;
+  margin-bottom: 20px;
+  width: 32vw;
+  height: 66.7vh;
+}
+.controls {
+    position: absolute;
+    top: 30vw;
+  display: none;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.controls .horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.controls button {
+  width: 5vw;
+  height: 4vw;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  background: #cccccc6d;
+  border: 1px solid #999;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #cccccc6d;
+}
+     
+}
+
+@media (max-width: 1500px) {
+    #game-func {
+  display: none;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#play > figure {
+  width: 40vw;
+  height: 65vh;
+  position: absolute;
+  background-image: url("../../../assents/img/apps/jogo/papiro.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play > figure > p {
+  width: 15vw;
+  height: 30vh;
+  font-size: 1.2vw;
+  color: rgb(148, 12, 12);
+  position: relative;
+  top: -1vw;
+  font-weight: 900;
+}
+
+#play > button {
+  position: absolute;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 2vw;
+  background-color: rgb(83, 2, 2);
+  top: 30vw;
+  font-size: 1.5vw;
+  color: white;
+}
+
+#play > button:active {
+  width: 17vw;
+  height: 5vw;
+  background-color: rgb(83, 2, 2);
+}
+
+#game-over {
+    z-index: 2;
+  width: 40vw;
+  height: 38vh;
+  background-image: url("../../../assents/img/apps/jogo/game-over.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  justify-content: center;
+}
+
+#game-seta {
+  position: absolute;
+  transform: rotate(180deg);
+  top: 10vw;
+}
+
+#seta-game {
+  width: 5vw;
+  height: 5vw;
+}
+
+#button-reinicia {
+  font-size: 2vw;
+  color: bisque;
+  font-weight: 800;
+  font-family: "Oldenburg", serif;
+  background-color: rgb(117, 15, 15);
+  width: 18vw;
+  height: 7vw;
+  border-radius: 3vw;
+  position: relative;
+  top: 15vw;
+}
+
+#button-reinicia:active {
+  background-color: rgb(122, 61, 61);
+  width: 15vw;
+  height: 6vw;
+}
+
+#gameCanvas {
+  border: 2px solid black;
+  background-image: url("../../../assents/img/apps/jogo/cenario-desert.jpg");
+  background-size: contain;
+  display: block;
+  margin-bottom: 20px;
+  width: 40vw;
+  height: 66.7vh;
+}
+.controls {
+    position: absolute;
+    top: 30vw;
+  display: none;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.controls .horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.controls button {
+  width: 5vw;
+  height: 4vw;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  background: #cccccc6d;
+  border: 1px solid #999;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #cccccc6d;
+}
+  
+}
+
+@media (max-width: 1024px) {
+  #game-func {
+  display: none;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#play > figure {
+  width: 55vw;
+  height: 80vh;
+  position: absolute;
+  background-image: url("../../../assents/img/apps/jogo/papiro.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play > figure > p {
+  width: 25vw;
+  height: 30vh;
+  font-size: 2.2vw;
+  color: rgb(148, 12, 12);
+  position: relative;
+  top: -14vw;
+  font-weight: 900;
+}
+
+#play > button {
+  position: absolute;
+  width: 23vw;
+  height: 6vw;
+  border-radius: 2vw;
+  background-color: rgb(83, 2, 2);
+  top: 40vw;
+  font-size: 2vw;
+  color: white;
+}
+
+#play > button:active {
+  width: 17vw;
+  height: 5vw;
+  background-color: rgb(83, 2, 2);
+}
+
+#game-over {
+    z-index: 2;
+  width: 60vw;
+  height: 45vh;
+  background-image: url("../../../assents/img/apps/jogo/game-over.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  justify-content: center;
+}
+
+#game-seta {
+  position: absolute;
+  transform: rotate(180deg);
+  top: 19vw;
+}
+
+#seta-game {
+  width: 7vw;
+  height: 7vw;
+}
+
+#button-reinicia {
+  font-size: 2.5vw;
+  color: bisque;
+  font-weight: 800;
+  font-family: "Oldenburg", serif;
+  background-color: rgb(117, 15, 15);
+  width: 27vw;
+  height: 9vw;
+  border-radius: 3vw;
+  position: relative;
+  top: 26vw;
+}
+
+#button-reinicia:active {
+  background-color: rgb(122, 61, 61);
+  width: 15vw;
+  height: 6vw;
+}
+
+#gameCanvas {
+  border: 2px solid black;
+  background-image: url("../../../assents/img/apps/jogo/cenario-desert.jpg");
+  background-size: contain;
+  display: block;
+  margin-bottom: 20px;
+  width: 60vw;
+  height: 69vh;
+}
+.controls {
+    position: absolute;
+    top: 50vw;
+  display: none;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.controls .horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.controls button {
+  width:10vw;
+  height: 9vw;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  background: #cccccc6d;
+  border: 1px solid #999;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #cccccc6d;
+}
+}
+
+@media (max-width: 600px) {
+     #game-func {
+  display: none;
+}
+
+#play {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#play > figure {
+  width: 69vw;
+  height: 80vh;
+  position: absolute;
+  background-image: url("../../../assents/img/apps/jogo/papiro.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play > figure > p {
+  width: 29vw;
+  height: 30vh;
+  font-size: 2.7vw;
+  color: rgb(148, 12, 12);
+  position: relative;
+  top: -25vw;
+  font-weight: 900;
+}
+
+#play > button {
+  position: absolute;
+  width: 30vw;
+  height: 5vw;
+  border-radius: 2vw;
+  background-color: rgb(83, 2, 2);
+  top: 52vw;
+  font-size: 2.6vw;
+  color: white;
+}
+
+#play > button:active {
+  width: 17vw;
+  height: 5vw;
+  background-color: rgb(83, 2, 2);
+}
+
+#game-over {
+    z-index: 2;
+  width: 70.5vw;
+  height: 50vh;
+  background-image: url("../../../assents/img/apps/jogo/game-over.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  justify-content: center;
+}
+
+#game-seta {
+  position: absolute;
+  transform: rotate(180deg);
+  top: 40vw;
+}
+
+#seta-game {
+  width: 10vw;
+  height: 10vw;
+}
+
+#button-reinicia {
+  font-size: 2.5vw;
+  color: bisque;
+  font-weight: 800;
+  font-family: "Oldenburg", serif;
+  background-color: rgb(117, 15, 15);
+  width: 27vw;
+  height: 9vw;
+  border-radius: 3vw;
+  position: relative;
+  top: 35vw;
+}
+
+#button-reinicia:active {
+  background-color: rgb(122, 61, 61);
+  width: 15vw;
+  height: 6vw;
+}
+
+#gameCanvas {
+  border: 2px solid black;
+  background-image: url("../../../assents/img/apps/jogo/cenario-desert.jpg");
+  background-size: contain;
+  display: block;
+  margin-bottom: 20px;
+  width: 70vw;
+  height: 60vh;
+}
+.controls {
+    position: absolute;
+    top: 79vw;
+  display: none;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.controls .horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.controls button {
+  width:14vw;
+  height: 12vw;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  background: #cccccc6d;
+  border: 1px solid #999;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #cccccc6d;
+}
+}

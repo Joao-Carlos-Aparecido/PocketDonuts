@@ -351,7 +351,7 @@
     #tela {
         width: 40vw;
         height: 67vh;
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         background-position: center;
         background-color: black;
@@ -363,7 +363,7 @@
     #tela {
         width: 60vw;
         height: 68vh;
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         background-position: center;
         background-color: black;

@@ -1,20 +1,21 @@
-// Região dos apps
+import {bt} from "./liga-e-desliga.js";
+
+
 const appsDoCal = document.getElementById("apps");
-//app da tela de inicio
+
 const appAtivoCal = document.getElementById("calculadora");
 
 const calFunc = document.getElementById("calculadora-funci");
 
-//botao de voltar
+
 const voltarCal = document.getElementById("voltar-cal");
 
-// Tela
 const telaCal = document.getElementById("calculadora-funci-tela");
 
-//Botão de reset
+
 const btnReset = document.getElementById("button-reset")
 
-// Botões de números
+
 const btn1 = document.getElementById("number1");
 const btn2 = document.getElementById("number2");
 const btn3 = document.getElementById("number3");
@@ -25,7 +26,7 @@ const btn7 = document.getElementById("number7");
 const btn8 = document.getElementById("number8");
 const btn9 = document.getElementById("number9");
 
-// Botões de operação
+
 const btnMais = document.getElementById("selMais");
 const btnMenos = document.getElementById("selMenos");
 const btnVezes = document.getElementById("selVezes");
@@ -90,6 +91,7 @@ btnMenos.addEventListener("click", function () {
   adicionar(btnMenos.value);
 });
 btnVezes.addEventListener("click", function () {
+
   adicionar(btnVezes.value);
 });
 btnDiv.addEventListener("click", function () {
