@@ -50,32 +50,32 @@ function descarregou() {
       secaoBloco.style.display = "none";
       icr.style.display = "none";
       game.style.display = "none"
-    }, 1200000000);
+    }, 240000);
   }
 }
 
 function TelaDescarregouF() {
   setTimeout(() => {
     TelaDescarregou.style.display = "flex";
-  }, 1200000000);
+  }, 235000);
   setTimeout(() => {
     TelaDescarregou.style.display = "none";
-  }, 1250000000);
+  }, 240000);
 }
 
 function bateria() {
   setTimeout(() => {
     bl4.style.display = "none";
-  }, 3000000);
+  },  60000);
   setTimeout(() => {
     bl3.style.display = "none";
-  }, 60000);
+  }, 120000);
   setTimeout(() => {
     bl2.style.display = "none";
-  }, 90000);
+  }, 180000);
   setTimeout(() => {
     bl1.style.display = "none";
-  }, 110000);
+  }, 240000);
 }
 
 btn.addEventListener("click", function () {

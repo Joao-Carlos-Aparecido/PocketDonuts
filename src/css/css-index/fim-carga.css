@@ -21,3 +21,139 @@
     color: white;
     font-size: 2vw;
 }
+
+@media (max-width: 1800px) {
+    #fim-de-carga {
+    display: none;
+    width: 32vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(164, 52, 52);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#fim-de-carga > h1 {
+    color: white;
+    font-size: 5vw;
+    
+}
+
+#fim-de-carga > p {
+    color: white;
+    font-size: 2vw;
+}
+   
+}
+
+@media (max-width: 1600px) {
+    #fim-de-carga {
+    display: none;
+    width: 32vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(164, 52, 52);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#fim-de-carga > h1 {
+    color: white;
+    font-size: 5vw;
+    
+}
+
+#fim-de-carga > p {
+    color: white;
+    font-size: 2vw;
+}
+}
+
+@media (max-width: 1500px) {
+    #fim-de-carga {
+    display: none;
+    width: 40vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(164, 52, 52);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#fim-de-carga > h1 {
+    color: white;
+    font-size: 5vw;
+    
+}
+
+#fim-de-carga > p {
+    color: white;
+    font-size: 2vw;
+}
+}
+
+@media (max-width: 1024px) {
+    #fim-de-carga {
+    display: none;
+    width: 60vw;
+    height: 65vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(164, 52, 52);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#fim-de-carga > h1 {
+    color: white;
+    font-size: 5vw;
+    
+}
+
+#fim-de-carga > p {
+    color: white;
+    font-size: 2vw;
+}
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    #fim-de-carga {
+    display: none;
+    width: 70vw;
+    height: 60vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(164, 52, 52);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#fim-de-carga > h1 {
+    color: white;
+    font-size: 5vw;
+    
+}
+
+#fim-de-carga > p {
+    color: white;
+    font-size: 2vw;
+}
+    
+}
