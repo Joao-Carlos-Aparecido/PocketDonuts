@@ -17,7 +17,7 @@ const apps = document.getElementById("apps")
 
 function alternar() {
   if (tela.style.backgroundImage) {
-    tela.style.backgroundImage = ""; 
+    tela.style.backgroundImage = "none"; 
     ic.style.display = "none";
     icr.style.display = "none";
     apps.style.display = "none"
@@ -27,8 +27,7 @@ function alternar() {
     
 
   } else {
-    tela.style.backgroundImage =
-      "url('../../../assents/img/wallpaper/wallpaper.png')"; 
+    tela.style.display="block"; 
     ic.style.display = "flex";
     icr.style.display = "flex";
     bl1.style.display = "block";
@@ -43,7 +42,7 @@ function alternar() {
 function descarregou() {
   if (tela.style.backgroundImage) {
     setTimeout(() => {
-      tela.style.backgroundImage = "";
+      tela.style.display= "none";
       ic.style.display = "none";
       apps.style.display = "none"
       calFunc.style.display = "none"

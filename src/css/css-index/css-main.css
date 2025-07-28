@@ -331,6 +331,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
+  display: none;
 }
 
 @media (max-width: 1800px) {
@@ -343,6 +344,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    display: none;
   }
 }
 
@@ -356,6 +358,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    display: none;
   }
 }
 
@@ -369,18 +372,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    display: none;
   }
 }
 @media (max-width: 600px) {
   #tela {
     background-image: url("../../../assents/img/wallpaper/wallpaper.png");
-
     width: 70vw;
     height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    display: none;
   }
 }
 
