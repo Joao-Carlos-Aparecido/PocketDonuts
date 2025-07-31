@@ -27,7 +27,8 @@ function alternar() {
     const pathBase =
       location.hostname === "127.0.0.1" || location.hostname === "localhost"
         ? ""
-        : "/POCKETS-DONUTS-SITE";
+        : "/
+PocketDonuts";
 
     tela.style.backgroundImage = `url("${pathBase}/assents/img/wallpaper/wallpaper.png")`;
 
