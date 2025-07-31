@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assents/img/mascote/logo.png" alt="Logo Pocket Donuts" width="400"/>
+  <img src="./assets/img/mascote/logo.png" alt="Logo Pocket Donuts" width="400"/>
 </p>
 
 ## 🍩 Pocket Donuts — Celular Digital (Projeto Interativo)
